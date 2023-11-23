@@ -23,18 +23,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-# Inherit some common DerpFest stuff
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+# Inherit some common eos stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
 USE_LEGACY_BOOTANIMATION := true
 PRODUCT_NO_CAMERA := true
 
 # Device identifier
-COLT_BUILD_MAINTAINER := SquareTea
-PRODUCT_NAME := colt_ginkgo
+PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8/8T
