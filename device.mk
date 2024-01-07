@@ -280,6 +280,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2 \
     android.hardware.nfc@1.2.vendor:64 \
+    android.hardware.nfc_snxxx@1.2-service \
     android.hardware.secure_element@1.2.vendor:64 \
     com.android.nfc_extras \
     NfcNci \
